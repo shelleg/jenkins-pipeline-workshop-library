@@ -7,5 +7,5 @@ def call() {
                     // set the build display name
                     currentBuild.displayName = "#${BUILD_ID}-${VERSION}"
                     IMAGE = "$PROJECT:$VERSION"
-                    IMAGE_LATEST = "$PROJECT:latest"
+                    env.IMAGE_LATEST = "$PROJECT:latest"
 }
